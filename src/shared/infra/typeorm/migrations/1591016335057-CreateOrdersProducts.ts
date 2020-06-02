@@ -47,7 +47,7 @@ export default class CreateOrdersProducts1591016335057
           {
             name: 'ForeignOrder',
             columnNames: ['order_id'],
-            referencedTableName: 'order',
+            referencedTableName: 'orders',
             referencedColumnNames: ['id'],
             onDelete: 'CASCADE',
             onUpdate: 'CASCADE',
@@ -55,7 +55,7 @@ export default class CreateOrdersProducts1591016335057
           {
             name: 'ForeignProduct',
             columnNames: ['product_id'],
-            referencedTableName: 'product',
+            referencedTableName: 'products',
             referencedColumnNames: ['id'],
             onDelete: 'CASCADE',
             onUpdate: 'CASCADE',

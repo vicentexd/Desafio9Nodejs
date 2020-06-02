@@ -5,7 +5,7 @@ export default class CreateCustomers1591016277328
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.createTable(
       new Table({
-        name: 'costumer',
+        name: 'customers',
         columns: [
           {
             name: 'id',
@@ -39,6 +39,6 @@ export default class CreateCustomers1591016277328
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
-    await queryRunner.dropTable('costumer');
+    await queryRunner.dropTable('customers');
   }
 }
